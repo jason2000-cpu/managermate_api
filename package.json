@@ -1,0 +1,14 @@
+{
+  "name": "managermate_api",
+  "version": "1.0.0",
+  "description": "json server backend for the managermate application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jason2000-cpu",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}
