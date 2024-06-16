@@ -1,139 +1,212 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "FName": "Jackson",
-            "SName": "Mwangi",
-            "eamail": "jackson@gmail.com",
-            "phone": "+254797955092",
-            "userType": "admin",
-            "password": "12345"
-        },
-        {
-            "id": 2,
-            "FName": "Alice",
-            "SName": "Thompson",
-            "email": "alicethompson@gmail.com",
-            "phone":"+254792945092",
-            "userType": "manager",
-            "password":"12345"
-        },
-        {
-            "id": 3,
-            "FName": "Peter",
-            "SName": "Tate",
-            "email": "petertate@gmail.com",
-            "phone":"+254792945126",
-            "userType": "user",
-            "password": "12345"
-        },
-        {
-            "id": 3,
-            "FName": "Ann",
-            "SName": "Nyaboke",
-            "email": "annnyabs@gmail.com",
-            "phone":"+254792945321",
-            "assignedTask": false ,
-            "department": "Finance",
-            "userType": "user",
-            "password": "12345"
-        }
-    ],
-
-    "departments": [
-        {
-            "id": 1,
-            "name": "Human Resource",
-            "code": "HR-120Z",
-            "HOD": "James Peter",
-            "contactEmail": "info@hrmanagermate",
-            "date_created": "2024-03-02",
-            "emmployees": [3]
-        },
-        {
-            "id": 2,
-            "name": "Finance",
-            "code": "FIN-120Z",
-            "HOD": "Eunice Thompson",
-            "contactEmail": "info@finmanagermate",
-            "date_created": "2024-01-02",
-            "emmployees": [3]
-        },
-        {
-            "id": 3,
-            "name": "IT",
-            "code": "IT-120Z",
-            "HOD": "Jackson Mwangi",
-            "contactEmail": "info@itmanagermate",
-            "date_created": "2023-12-02",
-            "emmployees": [3]
-        },
-        {
-            "id": 4,
-            "name": "Sales",
-            "code": "SL-120Z",
-            "HOD": "James Peter",
-            "contactEmail": "info@salesmanagermate",
-            "date_created": "2024-05-02",
-            "emmployees": [3]
-        }
-    ],
-
-    "tasks":  [
-        {
-            "id": 1,
-            "title": "User Interface Design",
-            "start": "2024-06-07",
-            "end": "2024-06-10",
-            "assigned_to": "Peter Tate",
-            "assigned_by": "Admin Jackson",
-            "description":"Using Your preffered tool  create an intuitive UI",
-            "color": "'#f56954'",
-            "status": "complete"
-        },
-        {
-            "id": 2,
-            "title": "Frontend Development",
-            "start": "2024-06-10",
-            "end": "2024-06-13",
-            "assigned_to": "Peter Tate",
-            "assigned_by": "Admin Jackson",
-            "description":"Following The UI created earlier  develope the frontend",
-            "color": "#f39c12",
-            "status": "complete"
-        },
-        {
-            "id": 3,
-            "title": "API Development",
-            "start": "2024-06-13",
-            "end": "2024-06-15",
-            "assigned_to": "Peter Tate",
-            "assigned_by": "Admin Jackson",
-            "description":"Using Flask design and develope an API",
-            "color": "#00a65a",
-            "status": "inprogress"
-        },
-        {
-            "id": 4,
-            "title": "API Intergration",
-            "start": "2024-06-15",
-            "end": "2024-06-18",
-            "assigned_to": "Peter Tate",
-            "assigned_by": "Admin Jackson",
-            "description":"Intergrate the frontend to the API",
-            "color": "#64a0f5",
-            "status": "incomplete"
-        },
-        {
-            "id": 5,
-            "title": "Web App Deployment",
-            "start":"2024-06-18",
-            "end": "2024-06-21",
-            "assigned_to": "Peter Tate",
-            "assigned_by": "Admin Jackson",
-            "description":"Deploy the Whole application on Vercel",
-            "color": "#083778",
-            "status": "incomplete"
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "FName": "Jackson",
+      "SName": "Mwangi",
+      "eamail": "jackson@gmail.com",
+      "phone": "+254797955092",
+      "userType": "admin",
+      "password": "12345"
+    },
+    {
+      "id": 2,
+      "FName": "Alice",
+      "SName": "Thompson",
+      "email": "alicethompson@gmail.com",
+      "phone": "+254792945092",
+      "userType": "manager",
+      "password": "12345"
+    },
+    {
+      "id": 3,
+      "FName": "Peter",
+      "SName": "Tate",
+      "email": "petertate@gmail.com",
+      "phone": "+254792945126",
+      "userType": "user",
+      "password": "12345"
+    },
+    {
+      "id": 3,
+      "FName": "Ann",
+      "SName": "Nyaboke",
+      "email": "annnyabs@gmail.com",
+      "phone": "+254792945321",
+      "assignedTask": false,
+      "department": "Finance",
+      "userType": "user",
+      "password": "12345"
+    },
+    {
+      "FName": "ALX",
+      "SName": "Hub",
+      "email": "info@alx.com",
+      "phone": "254797955562",
+      "password": "12345",
+      "Cpassword": "12345",
+      "id": "78e1787e-52f6-4f5c-b6fe-87f613888c53",
+      "userType": "user",
+      "assignedTask": false,
+      "department": "IT"
+    }
+  ],
+  "departments": [
+    {
+      "id": 1,
+      "name": "Human Resource",
+      "code": "HR-120Z",
+      "HOD": "James Peter",
+      "contactEmail": "info@hrmanagermate",
+      "date_created": "2024-03-02",
+      "emmployees": [
+        3
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Finance",
+      "code": "FIN-120Z",
+      "HOD": "Eunice Thompson",
+      "contactEmail": "info@finmanagermate",
+      "date_created": "2024-01-02",
+      "emmployees": [
+        3
+      ]
+    },
+    {
+      "id": 3,
+      "name": "IT",
+      "code": "IT-120Z",
+      "HOD": "Jackson Mwangi",
+      "contactEmail": "info@itmanagermate",
+      "date_created": "2023-12-02",
+      "emmployees": [
+        3
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Sales",
+      "code": "SL-120Z",
+      "HOD": "James Peter",
+      "contactEmail": "info@salesmanagermate",
+      "date_created": "2024-05-02",
+      "emmployees": [
+        3
+      ]
+    },
+    {
+      "name": "Marketing",
+      "HOD": "James Mwangi",
+      "description": "The main aim of this department is to help the organization in all its marketing work",
+      "contactEmail": "marketing@managermate.com",
+      "parentDepartment": "Sales",
+      "": "r",
+      "id": "3f294fbd-1509-432c-8120-fe96f5762ccf",
+      "date_created": "2024-06-16",
+      "emmployees": [],
+      "code": "1006"
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "title": "User Interface Design UI/UX",
+      "start": "2024-06-07",
+      "end": "2024-06-10",
+      "assigned": true,
+      "assigned_to": "Peter Tate",
+      "assigned_by": "Admin Jackson",
+      "description": "Using Your preffered tool  create an intuitive UIII",
+      "color": "'#f56954'",
+      "status": "complete"
+    },
+    {
+      "id": 2,
+      "title": "Frontend Development",
+      "start": "2024-06-10",
+      "end": "2024-06-13",
+      "assigned": true,
+      "assigned_to": "Peter Tate",
+      "assigned_by": "Admin Jackson",
+      "description": "Following The UI created earlier  develope the frontend",
+      "color": "#f39c12",
+      "status": "complete"
+    },
+    {
+      "id": 3,
+      "title": "API Development",
+      "start": "2024-06-13",
+      "end": "2024-06-15",
+      "assigned": true,
+      "assigned_to": "Peter Tate",
+      "assigned_by": "Admin Jackson",
+      "description": "Using Flask design and develope an API",
+      "color": "#00a65a",
+      "status": "inprogress"
+    },
+    {
+      "id": 4,
+      "title": "API Intergration",
+      "start": "2024-06-15",
+      "end": "2024-06-18",
+      "assigned": true,
+      "assigned_to": "Peter Tate",
+      "assigned_by": "Admin Jackson",
+      "description": "Intergrate the frontend to the API",
+      "color": "#64a0f5",
+      "status": "incomplete"
+    },
+    {
+      "id": 5,
+      "title": "Web App Deployment",
+      "start": "2024-06-18",
+      "end": "2024-06-21",
+      "assigned": false,
+      "assigned_to": "Ann Nyaboke",
+      "assigned_by": null,
+      "description": "Deploy the Whole application on Vercel",
+      "color": "#083778",
+      "status": "incomplete",
+      "assignedTo": "3"
+    },
+    {
+      "title": "Perform User Testing",
+      "description": "Hello User Testing using any preferrable user testing tool",
+      "start": "2024-06-16",
+      "end": "2024-06-22",
+      "id": "a3ab5d0c-a8df-4c48-a79e-ff18ed268e5c",
+      "assigned": false,
+      "assigned_to": "Ann Nyaboke",
+      "assigned_by": null,
+      "color": "#f56954",
+      "status": "incomplete",
+      "assignedTo": "3"
+    },
+    {
+      "title": "Containerize the web application",
+      "description": "Using docker containerize the full web application",
+      "start": "2024-06-17",
+      "end": "2024-06-23",
+      "id": "6403a9ca-9681-4820-a469-d016ad14784b",
+      "assigned": false,
+      "assigned_to": null,
+      "assigned_by": null,
+      "color": "#f56954",
+      "status": "incomplete"
+    },
+    {
+      "title": "Perform User Testing",
+      "description": "wallaaaah",
+      "start": "2024-06-17",
+      "end": "2024-06-18",
+      "id": "af4de6fb-49ad-41b8-973c-e96250f9276e",
+      "assigned": false,
+      "assigned_to": null,
+      "assigned_by": null,
+      "color": "#f56954",
+      "status": "incomplete"
+    }
+  ]
 }
