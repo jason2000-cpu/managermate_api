@@ -24,7 +24,13 @@ const server = jsonServer.create();
 const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults();
 
-server.use(cors());
+server.use(
+    cors({
+        origin: true,
+        credentials: true,
+        preflightContinue: false,
+        methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    }))
 server.use(jsonServer.bodyParser);
 server.use(middlewares);
 server.use(router);
