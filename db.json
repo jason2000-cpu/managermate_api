@@ -1,26 +1,15 @@
 {
   "users": [
     {
-      "id": "1",
       "FName": "Jackson",
       "SName": "Mwangi",
-      "email": "jackson@gmail.com",
-      "phone": "+254797955092",
+      "email": "jacksonmwangi@gmail.com",
+      "phone": "+254792945321",
+      "assignedTask": false,
+      "department": "IT",
       "userType": "admin",
-      "assignedTask": false,
-      "department": "head",
-      "password": "12345"
-    },
-    {
-      "id": "2",
-      "FName": "Alice",
-      "SName": "Thompson",
-      "email": "alicethompson@gmail.com",
-      "phone": "+254792945092",
-      "userType": "manager",
-      "assignedTask": false,
-      "department": "Sales",
-      "password": "12345"
+      "password": "12345",
+      "id": "1"
     },
     {
       "FName": "Ann",
@@ -29,21 +18,9 @@
       "phone": "+254792945321",
       "assignedTask": false,
       "department": "IT",
-      "userType": "user",
+      "userType": "manager",
       "password": "AnnYnaboke",
-      "id": "4"
-    },
-    {
-      "FName": "ALX",
-      "SName": "Hub",
-      "email": "info@alx.com",
-      "phone": "254797955562",
-      "password": "12345",
-      "Cpassword": "12345",
-      "id": "78e1787e-52f6-4f5c-b6fe-87f613888c53",
-      "userType": "user",
-      "assignedTask": true,
-      "department": "IT"
+      "id": "2"
     },
     {
       "FName": "Peter",
@@ -56,21 +33,32 @@
       "userType": "user",
       "assignedTask": true,
       "department": "Legal"
+    },
+    {
+      "id": "6f2d8acd-c7fa-484d-9981-204d521bb5a6",
+      "FName": "Alice",
+      "SName": "Njuguna",
+      "email": "alicenjuguna@gmail.com",
+      "phone": "254797955092",
+      "userType": "user",
+      "department": "sales",
+      "assignedTask": false,
+      "password": "12345"
+    },
+    {
+      "FName": "Elias ",
+      "SName": "Mwangi",
+      "email": "eliasmwangi@gmail.com",
+      "phone": "254797955092",
+      "password": "12345",
+      "Cpassword": "12345",
+      "id": "eb99d0bc-74ca-48cc-b0ba-6b8ca8c38f18",
+      "userType": "user",
+      "assignedTask": false,
+      "department": "IT"
     }
   ],
   "departments": [
-    {
-      "id": "1",
-      "name": "Human Resource",
-      "code": "HR-120Z",
-      "HOD": "James Peter",
-      "description": "",
-      "contactEmail": "info@hrmanagermate",
-      "date_created": "2024-03-02",
-      "employees": [
-        "3"
-      ]
-    },
     {
       "name": "Finance",
       "HOD": "Eunice Thompson",
@@ -126,9 +114,9 @@
       "id": "1",
       "title": "User Interface Design UI/UX",
       "start": "2024-06-07",
-      "end": "2024-06-10",
-      "assigned_to": "3",
-      "assigned_by": "Admin Jackson",
+      "end": "2024-07-05",
+      "assigned_to": "78e1787e-52f6-4f5c-b6fe-87f613888c53",
+      "assigned_by": "Jackson",
       "description": "Using Your preffered tool  create an intuitive UIII",
       "color": "'#f56954'",
       "status": "complete"
@@ -138,7 +126,7 @@
       "title": "Frontend Development",
       "start": "2024-06-10",
       "end": "2024-06-13",
-      "assigned_to": "3",
+      "assigned_to": "78e1787e-52f6-4f5c-b6fe-87f613888c53",
       "assigned_by": "Admin Jackson",
       "description": "Following The UI created earlier  develope the frontend",
       "color": "#f39c12",
@@ -149,7 +137,7 @@
       "title": "API Development",
       "start": "2024-06-13",
       "end": "2024-06-15",
-      "assigned_to": "3",
+      "assigned_to": "78e1787e-52f6-4f5c-b6fe-87f613888c53",
       "assigned_by": "Admin Jackson",
       "description": "Using Flask design and develope an API",
       "color": "#00a65a",
@@ -160,7 +148,7 @@
       "title": "API Intergration",
       "start": "2024-06-15",
       "end": "2024-06-18",
-      "assigned_to": "3",
+      "assigned_to": "78e1787e-52f6-4f5c-b6fe-87f613888c53",
       "assigned_by": "Admin Jackson",
       "description": "Intergrate the frontend to the API",
       "color": "#64a0f5",
@@ -171,7 +159,7 @@
       "title": "Web App Deployment",
       "start": "2024-06-18",
       "end": "2024-06-21",
-      "assigned_to": "3",
+      "assigned_to": "78e1787e-52f6-4f5c-b6fe-87f613888c53",
       "assigned_by": null,
       "description": "Deploy the Whole application on Vercel",
       "color": "#083778",
@@ -199,7 +187,7 @@
       "assigned_to": "78e1787e-52f6-4f5c-b6fe-87f613888c53",
       "assigned_by": "Alice Thompson",
       "color": "#f56954",
-      "status": "incomplete"
+      "status": "complete"
     },
     {
       "title": "Perform User Testing",
@@ -220,6 +208,17 @@
       "id": "8f92041e-c94b-40a6-86d4-b6d5653243a9",
       "assigned_to": "4",
       "assigned_by": "Ann Nyaboke",
+      "color": "#f56954",
+      "status": "incomplete"
+    },
+    {
+      "title": "Deploy the whole application on Vercel",
+      "description": "Make sure to build the whole application and deploy the web app on vercel. After a successful deployment, submit the live link",
+      "start": "2024-06-26",
+      "end": "2024-07-06",
+      "id": "ec294f1a-eed8-4a4a-9b0b-93bb730e6478",
+      "assigned_to": "27d1790c-a4d0-4f63-b572-03b42510ab72",
+      "assigned_by": "Jackson",
       "color": "#f56954",
       "status": "incomplete"
     }
